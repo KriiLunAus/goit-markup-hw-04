@@ -155,7 +155,7 @@ p {
 }
 
 /* SECTION FEATURES */
-svg {
+.features-image-element {
   width: 64px;
   height: 64px;
 }
@@ -409,20 +409,21 @@ svg {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .footer-media {
   max-width: 208px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .footer-media-list {
   display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
 
 .media-list-element {
-  width: 24px;
-  height: 24px;
+  background-color: #4d5ae5;
+  fill: #f4f4fd;
 }
