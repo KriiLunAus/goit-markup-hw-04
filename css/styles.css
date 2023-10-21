@@ -4,9 +4,16 @@ img {
 h1,
 h2,
 h3,
+ul,
 p {
   margin: 0;
   padding-left: 0;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 /* HEADER STYLES */
 .body {
@@ -29,10 +36,8 @@ p {
   line-height: 1.17;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-  margin-bottom: 24px;
-  margin-right: 76px;
   text-decoration: none;
-  padding-top: 24px;
+  margin-right: 76px;
 }
 
 .header-logo-part {
@@ -55,7 +60,6 @@ p {
   text-decoration: none;
   margin-right: 40px;
   list-style-type: none;
-  margin: 0;
 }
 
 .contacts-link {
@@ -80,13 +84,10 @@ p {
 .header-head-link:focus {
   color: #404bbf;
 }
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
+
 .container-header {
   display: flex;
+  justify-content: space-between;
 }
 .navigation {
   display: flex;
@@ -98,7 +99,6 @@ p {
   list-style-type: none;
   padding-left: 0;
   padding: 24px 0;
-  margin: 0px;
 }
 
 /* SECTION HERO */
