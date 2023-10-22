@@ -71,6 +71,7 @@ a {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-decoration: none;
+  transition: color 250ms ease-in-out;
 }
 
 .header-head-link {
@@ -123,11 +124,10 @@ a {
   font-weight: 500;
   padding: 188px 0;
   background-color: #2e2f42;
-  background-image: url(../images/people-office.jpg),
-    linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  background-image: url(../images/people-office.jpg);
+  background-size: 1440px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: content;
 }
 
 .hero-header {
@@ -277,6 +277,9 @@ a {
   padding-left: 0;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-li-head {
@@ -371,6 +374,36 @@ a {
   display: inline-flex;
   flex-direction: column;
   width: calc((100% - 48px) / 3);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.overlay {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 0 32px;
+  padding-top: 40px;
+  color: #f4f4fd;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section-portfolio-list-element:hover .overlay {
+  transform: translateY(0%);
+  background-color: #4d5ae5;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .section-portfolio-list-element-head {
   color: #2e2f42;
@@ -394,6 +427,8 @@ a {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  z-index: 1;
+  background-color: #ffffff;
 }
 
 /* FOOTER */
@@ -467,6 +502,11 @@ a {
   height: 40px;
   background-color: #4d5ae5;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover {
+  background-color: #31d0aa;
 }
 .footer-icon {
   width: 24px;
