@@ -473,13 +473,14 @@ a {
   width: fit-content;
   margin-left: 156px;
   margin-right: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
 
 .footer-section {
   background-color: #2e2f42;
   padding: 100px 0;
-  display: flex;
-  align-items: baseline;
 }
 
 .footer-logo-link {
@@ -495,6 +496,9 @@ a {
   line-height: 1.17;
   margin-bottom: 16px;
   width: 264px;
+}
+.logo-container {
+  margin-right: 120px;
 }
 
 .footer-link-part {
