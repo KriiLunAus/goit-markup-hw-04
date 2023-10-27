@@ -209,7 +209,6 @@ a {
 .features {
   display: flex;
   width: 1440px;
-  margin: 0 auto;
   padding-left: 24px;
 }
 .visually-hidden {
